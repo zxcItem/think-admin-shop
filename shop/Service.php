@@ -24,7 +24,7 @@ class Service extends Plugin
      * 定义安装包名
      * @var string
      */
-    protected $package = 'xiaochao/think-plugs-shop';
+    protected $package = 'xiaochao/think-admin-shop';
 
     /**
      * 插件服务注册
