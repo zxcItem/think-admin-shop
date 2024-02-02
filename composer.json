@@ -1,0 +1,44 @@
+{
+    "type": "think-admin-plugin",
+    "name": "xiaochao/think-admin-shop",
+    "license": "MIT",
+    "description": "ThinAdminShop Plugin for ThinkAdmin",
+    "authors": [
+        {
+            "name": "叶落无痕",
+            "email": "1262847141@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "ext-json": "*",
+        "zoujingli/ip2region": "^1.0|^2.0|@dev",
+        "zoujingli/think-install": "^1.0|@dev",
+        "zoujingli/think-library": "^6.1|@dev"
+    },
+    "extra": {
+        "config": {
+            "type": "module",
+            "name": "通用商城"
+        },
+        "think": {
+            "services": [
+                "app\\shop\\Service"
+            ]
+        },
+        "plugin": {
+            "copy": {
+                "shop": "!app/shop",
+                "stc/database": "database/migrations"
+            },
+            "clear": true
+        }
+    },
+    "minimum-stability": "dev",
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "zoujingli/think-install": true
+        }
+    }
+}
